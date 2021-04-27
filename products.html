@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Media Queries, CSS Grid, and Flexbox</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+  <!--linking to our external CSSfile here:-->
+  <link rel="stylesheet" type="text/css" href="css/style_products.css">
+  <!--linking to Google Fonts here:-->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@200;400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <!--!!!!!!!!!! MAIN MENU !!!!!!!!!!--->
+  <div class="nav-wrapper">
+    <div class="topnav" id="myTopnav">
+      <!-- This is the code that defines our hamburger icon and
+      sets up the onclick function that will run when user clicks on the icon-->
+      <img id="logo" src="img/logo.jpg" alt="Logo" style="width:10%;">
+      <a href="#" class="icon" onclick="mobilehamburger()">
+        <img id="hamburger" src="hamburger.svg">
+      </a>
+      <!-- The list of menu items -->
+      <a href="index.html" class="menu-link">HOME</a>
+      <a href="products.html" class="menu-link">PRODUCTS</a>
+      <a href="aboutus.html" class="menu-link">ABOUT US</a>
+      <a href="contact.html" class="menu-link">CONTACT</a>
+    </div>
+  </div>
+  <!--!!!!!!!!!! end main menu !!!!!!!!!!--->
+
+<!-- HERO image -->
+<div class="home_hero">
+  <img src="img/Products.jpg" alt="Products" style="width:100%;">
+    <div class="bottom-left">
+      <img src="img/OverTheMoon.png" alt="Products" style="width:40%;">
+    </div>
+</div>
+
+<!--!!!!!!!!!! GRID !!!!!!!!!!--->
+<div id="grid">
+  <div id="one" class="grid-section">
+    <p>We live in a city where reckless development makes it hard to see the stars anymore. For those who are tired of the hard daily life in big cities, we planned it, hoping to spend the time meeting stars again in the streets in the home yard, to be alert to the city's air pollution and live as an opportunity to find work-life balance.</p>
+    </div>
+
+  <div id="two" class="grid-section">
+    <img src="img/Products1.jpg" alt="Products1" style="width:100%;">
+    </div>
+
+  <div id="three" class="grid-section">
+    <h2>Immersive Exhibition About the NIGHT SKY. </h2>
+    <p>Present our ideas like telling a story
+Bring up questions and then provide our ideas</p>
+    </div>
+
+  <div id="four" class="grid-section">
+    <img src="img/Products2.jpg" alt="Products1" style="width:100%;">
+    </div>
+
+  <div id="five" class="grid-section">
+    <img src="img/Products4.jpg" alt="Products1" style="width:100%;">
+    </div>
+
+    <div id="six" class="grid-section">
+      <p>We live in a city where reckless development makes it hard to see the stars anymore. For those who are tired of the hard daily life in big cities, we planned it, hoping to spend the time meeting stars again in the streets in the home yard, to be alert to the city's air pollution and live as an opportunity to find work-life balance.</p>
+      </div>
+
+    </div>
+  <div id="seven" class="grid-section">
+    <a href="products.html" class="bottom_links"><p>Our Service</p></a>
+    <a href="contact.html" class="bottom_links"><p>Contact</p></a>
+    <img class="bottom_links" src="img/logo.jpg" alt="Logo" style="width:10%;">
+    <a href="privacy.html" class="bottom_links"><p>Privacy</p></a>
+    <a href="about.html" class="bottom_links"><p>About Us</p></a>
+  </div>
+</div>
+
+
+<!--!!!!!!!!!! end grid !!!!!!!!!!--->
+
+<hr>
+ © AMUSE 2021
+ <img class="bottom_icons" src="img/facebook.png" alt="facebook" style="width:2%;">
+ <img class="bottom_icons" src="img/instagram.png" alt="instagram" style="width:2%;">
+ <img class="bottom_icons" src="img/linkedin.png" alt="linkedin" style="width:2%;">
+ <img class="bottom_icons" src="img/twitter.png" alt="twitter" style="width:2%;">
+ <img class="bottom_icons" src="img/youtube.png" alt="youtube" style="width:2%;">
+
+<!--Linking to our JavaScript here-->
+<script src="script.js"></script>
+</body>
+
+</html>

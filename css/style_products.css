@@ -1,0 +1,152 @@
+p{font-family: NTR, sans-serif;
+font-size: 20px;
+color: #000000;
+padding: 10px;
+line-height: 1.6;}
+
+h2{font-family: Montserrat;
+font-size: 30px;
+color: #000000;
+}
+
+h1{font-family: Montserrat;
+font-size: 48px;
+color: #FFFFFF;
+}
+
+.home_hero {
+  position: relative;
+}
+
+.bottom-left {
+  position: absolute;
+  bottom: 20px;
+  left: 40px;
+  text-align: left;
+  width: 50%;
+}
+
+.text-left{
+  padding-left: 10px;
+  text-align: left;
+  width: 70%;
+}
+
+.button{
+  background-color: #FFD400;
+  border: none;
+  color: #232323;
+  text-align: center;
+  float: right;
+  display: inline-block;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.bottom_links{
+  display: inline-block;
+  justify-content: space-evenly;
+}
+
+.bottom_icons{
+  float: right;
+  padding: 2px;
+}
+
+#three, #four, #five{
+  background: #F6F6F6;
+}
+
+/********* BASIC NAV STYLES THAT AREN'T AFFECTED BY BROWSER WIDTH *********/
+.nav-wrapper {background-color: #FFFFFF;}
+.topnav { display: flex;}
+.topnav a { color: #232323; font-family: Montserrat; padding: 14px 16px; text-decoration: none; font-size:17px;}
+.topnav a:hover { color: yellow;}
+.topnav a.active { background-color: #4CAF50; color: white;}
+.topnav .icon { display: none;}
+/*** end basic nav styling ***/
+
+/********* GLOBAL GRID STYLES *********/
+.grid-section {
+    margin: 4px;
+    padding: 5px;
+    min-height: 80px;
+    border-radius: 12pt;
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+
+/* The grid-area property places a grid item into a named
+   * region (area) of the grid. */
+  #one    { grid-area: one; }
+  #two    { grid-area: two; }
+  #three  { grid-area: three; }
+  #four   { grid-area: four; }
+  #five   { grid-area: five; }
+  #six    { grid-area: six; }
+  #seven  { grid-area: seven; }
+  /*** end global grid styling ***/
+
+
+/********* MEDIA QUERIES BEGIN *********/
+@media (max-width: 750px) {
+  @media (max-width: 750px) {
+
+    .menu-link {display: none;}
+    .topnav.clicked .menu-link {display: block;}
+
+    .topnav {
+      flex-direction: column;
+      align-items: flex-end;
+      }
+
+    #id{
+      text-align: left
+    }
+
+    .topnav a.icon {
+      display: flex;
+      background-color: #333;
+      }
+
+      #grid {
+      display:grid;
+      grid-template: "one one"
+                     "two two"
+                     "three three"
+                     "four four";
+      grid-template-columns: repeat (2, 1fr);
+       grid-gap: .2em;
+     }
+     .flex-wrapper {
+       display: block;
+     }
+
+     h1 {
+       font-size: 36px;
+       line-height: 40px;
+     }
+}
+
+}
+
+
+@media (min-width:751px){
+  #grid {
+        display: grid;
+        margin:5em;
+        /* The columns and areas of the grid can be defined visually
+         * using the grid-template property.  Each string is a row, and
+         * each word an area.  The number of words in a string
+         * determines the number of columns. Note the number of words
+         * in each string must be identical. */
+        grid-template: "one two"
+                       "three four"
+                       "five six"
+                       "seven seven";
+         grid-template-columns: repeat(2, 1fr);
+         grid-gap: 1.2em;
+      }
+  }
