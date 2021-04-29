@@ -58,10 +58,7 @@ color: #FFFFFF;
 }
 
 /********* BASIC NAV STYLES THAT AREN'T AFFECTED BY BROWSER WIDTH *********/
-.nav-wrapper {background-color: #FFFFFF;}
-.topnav { display: flex;}
 .topnav a { color: #232323; font-family: Montserrat; padding: 14px 16px; text-decoration: none; font-size:17px;}
-.topnav a:hover { color: yellow;}
 .topnav a.active { background-color: #4CAF50; color: white;}
 .topnav .icon { display: none;}
 /*** end basic nav styling ***/
@@ -102,13 +99,9 @@ color: #FFFFFF;
       align-items: flex-end;
       }
 
-    #id{
-      text-align: left
-    }
-
     .topnav a.icon {
       display: flex;
-      background-color: #333;
+      float: right;
       }
 
       #grid {
@@ -143,10 +136,12 @@ color: #FFFFFF;
          * determines the number of columns. Note the number of words
          * in each string must be identical. */
         grid-template: "one two"
-                       "three four"
-                       "five six"
-                       "seven seven";
+                       "three three"
+                       "four four"
+                       "five five";
          grid-template-columns: repeat(2, 1fr);
          grid-gap: 1.2em;
       }
+    .topnav { display: flex;}
+    .topnav a:hover { background-color: #000000; color: #FFFFFF;}
   }

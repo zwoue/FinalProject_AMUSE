@@ -10,7 +10,7 @@ function mobilehamburger() {
 
    else {
     mainTopnav.className = "topnav";
-    icon.src="hamburger.svg";
+    icon.src="img/hamburger.png";
 
   }
 }
