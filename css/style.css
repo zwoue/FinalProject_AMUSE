@@ -58,9 +58,9 @@ color: #FFFFFF;
 }
 
 /********* BASIC NAV STYLES THAT AREN'T AFFECTED BY BROWSER WIDTH *********/
-.nav-wrapper {background-color: #5E5E5E;}
+.nav-wrapper {background-color: #FFFFFF;}
 .topnav { display: flex;}
-.topnav a { color: white; font-family: Montserrat; padding: 14px 16px; text-decoration: none; font-size:17px;}
+.topnav a { color: #232323; font-family: Montserrat; padding: 14px 16px; text-decoration: none; font-size:17px;}
 .topnav a:hover { color: yellow;}
 .topnav a.active { background-color: #4CAF50; color: white;}
 .topnav .icon { display: none;}
@@ -102,13 +102,9 @@ color: #FFFFFF;
       align-items: flex-end;
       }
 
-    #id{
-      text-align: left
-    }
-
     .topnav a.icon {
       display: flex;
-      background-color: #333;
+      float: right;
       }
 
       #grid {
